@@ -120,6 +120,7 @@ h2 {
     border: 1px solid #666;
     padding-left: 40px;
     padding-right: 20px;
+    font-size: 14px;
 }
 
 .search-box:focus {
@@ -363,7 +364,12 @@ footer {
 .hook .apps .apps-icon {
     position: absolute;
     top : 61px;
-    opacity: .5;    
+    opacity: .5;
+    transition: all .15s ease;
+}
+
+.hook .apps .apps-icon:hover {
+    opacity: 1;
 }
 
 .apps .browsers {
@@ -375,7 +381,7 @@ footer {
 }
 
 .apps .apple {
-    left: 468px;
+    left: 471px;
 }
 
 .apps .windows {
@@ -383,5 +389,107 @@ footer {
 }
 
 .apps .osx {
-    left: 700px;
+    left: 690px;
+}
+
+.nav {
+    border-top: 1px solid rgb(219,221,225,.1);
+    display: flex;
+    align-items: center;
+    padding : 0 30px 50px;   
+}
+
+.nav .branding {
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    height: 75px;
+}
+
+.nav .branding a {
+    height: 38px;
+    display: block;
+}
+
+.nav .branding img {
+    margin-top: 0;
+}
+
+.spacer {
+    flex-basis: 250px;
+    height: 100%;
+}
+
+.nav .links {
+    display: flex;
+    height: 100%;
+    margin: 30px 0 0 0 ;
+    width: 100%;
+}
+
+.nav .links .links-col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nav .links .links-col .links-item {
+    padding: 8px 0;
+    text-align: left;
+    line-height: 1;
+}
+
+.nav .links .links-col .links-item a {
+    color: white;
+    opacity: .3;
+    transition: opacity .12s ease-in-out;
+}
+
+.link-hiring {
+    color: #3BA55C;
+    opacity: 1;
+}
+
+.nav .links .links-col .link-a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.customer .customer_btn {
+    width: 135px;
+    height: 50px;
+    background-color: #5865f2;
+    border-radius: 40px;
+    position: fixed;
+    padding: 0px;
+    margin: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    overflow: visible;
+    opacity: 1;
+    border: 0px;
+    z-index: 999998;
+    right: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer .customer_btn .btn-label {
+    text-align: center;
+    display: block;
+    padding-left: 5px;
+    
+}
+
+.customer .customer_btn>svg {
+    color: #ffffff;
+    fill: #ffffff;
 }
