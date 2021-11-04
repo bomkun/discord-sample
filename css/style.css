@@ -186,6 +186,14 @@ ul {
     justify-content: flex-end;
 }
 
+.flex-item:hover {
+    position: relative;
+    background-color: coral;
+    transition-duration: .5s;
+    transition-property: all;
+  }
+  
+
 .flex-item h2 {
     /* margin-top: 116px; */
     font-size: 22px;
@@ -480,6 +488,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .customer .customer_btn .btn-label {
